@@ -726,7 +726,8 @@ RedisClient.prototype.return_reply = function (reply) {
         });
         this.emit("monitor", timestamp, args);
     } else {
-        throw new Error("node_redis command queue state error. If you can reproduce this, please report it.");
+        // This error is thrown under some race conditions on un-subscribe.
+        //throw new Error("node_redis command queue state error. If you can reproduce this, please report it.");
     }
 };
 
