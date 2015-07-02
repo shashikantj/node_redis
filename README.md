@@ -7,7 +7,7 @@ experimental Redis server branches.
 
 Install with:
 
-    npm install redis
+    npm install redis_dcio
 
 Pieter Noordhuis has provided a binding to the official `hiredis` C library, which is non-blocking and fast.  To use `hiredis`, do:
 
